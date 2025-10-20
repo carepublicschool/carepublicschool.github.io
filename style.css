@@ -103,3 +103,198 @@ footer {
   padding: 15px 0;
   font-size: 0.9rem;
 }
+
+.values-education {
+  margin: 40px 0;
+  background: #f0f7ff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.values-education h3 {
+  color: #004aad;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.values-education > p {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.values-education ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.values-education li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+  position: relative;
+  padding-left: 25px;
+}
+
+.values-education li:last-child {
+  border-bottom: none;
+}
+
+.values-education li:before {
+  content: "✓";
+  color: #004aad;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.events-highlights {
+  margin: 40px 0;
+}
+
+.events-highlights h3 {
+  color: #004aad;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.event-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.event-category {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.event-category h4 {
+  color: #004aad;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #004aad;
+  padding-bottom: 8px;
+}
+
+.event-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.event-category li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.event-category li:last-child {
+  border-bottom: none;
+}
+
+.event-category li:before {
+  content: "•";
+  color: #004aad;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Container for the masonry layout */
+.gallery {
+    column-count: 4; /* Display images in 4 columns */
+    column-gap: 1rem; /* Add space between columns */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 80vh; /* Set a maximum height to enable scrolling */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for individual image items */
+.gallery img {
+    width: 100%; /* Images fill the width of their column */
+    height: auto; /* Maintain the image's aspect ratio */
+    margin-bottom: 1rem; /* Add space between images vertically */
+    display: block; /* Removes extra space below the image */
+    break-inside: avoid; /* Prevents images from breaking across columns */
+    pointer-events: none; /* Prevents mouse interaction with images */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1200px) {
+    .gallery {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    .gallery {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        column-count: 1;
+    }
+}
+
+/* Update your .gallery-section rule */
+.gallery-section {
+    position: relative;
+    background-image: url('img/school');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    color: white; /* You may want to change this back if it doesn't stand out */
+    z-index: 1;
+}
+
+/* Modify the ::before pseudo-element */
+.gallery-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Remove or comment out this line to "off" the background color */
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    z-index: -1;
+}
+
+/* Adjust the color of the gallery heading and other text if needed */
+.gallery-section h2 {
+    color: #004aad; /* Change to a color that works well with your image */
+}
+
+/* Add a new rule for gallery image divs */
+.gallery-image {
+    width: 100%;
+    /* Set a standard aspect ratio or height based on your design */
+    height: 250px; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    break-inside: avoid;
+}
+
