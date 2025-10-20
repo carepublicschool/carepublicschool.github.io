@@ -8,15 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = `img/c${i}.jpg`;
         img.alt = `Gallery Image ${i}`;
         
-        // Prevent right-click on each image
-        img.oncontextmenu = (e) => {
-            e.preventDefault();
-        };
-
-        // Prevent dragging the image
-        img.ondragstart = (e) => {
-            e.preventDefault();
-        };
+        // Anti-copy measures (optional, see previous responses)
+        img.oncontextmenu = (e) => e.preventDefault();
+        img.ondragstart = (e) => e.preventDefault();
 
         galleryContainer.appendChild(img);
     }
