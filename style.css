@@ -215,25 +215,25 @@ h1 {
 }
 
 /* Container for the masonry layout */
+/* Container for the fixed-size grid layout */
 .gallery {
-    column-count: 4; /* Display images in 4 columns */
-    column-gap: 1rem; /* Add space between columns */
-    overflow-y: auto; /* Enable vertical scrolling */
-    max-height: 80vh; /* Set a maximum height to enable scrolling */
+    display: grid;
+    /* Defines a responsive grid with fixed-size cells */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1rem; /* Space between grid items */
+    overflow-y: scroll; /* Use 'scroll' to ensure overflow is always handled */
+    max-height: 80vh;
     padding: 1rem;
-    border: 1px solid #ccc;
-    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for individual image items */
 .gallery img {
-    width: 100%; /* Images fill the width of their column */
-    height: auto; /* Maintain the image's aspect ratio */
-    margin-bottom: 1rem; /* Add space between images vertically */
-    display: block; /* Removes extra space below the image */
-    break-inside: avoid; /* Prevents images from breaking across columns */
-    pointer-events: none; /* Prevents mouse interaction with images */
+    width: 100%;
+    height: 250px; /* Set a fixed height for all images */
+    object-fit: cover; /* This is the key property */
+    display: block;
+    border-radius: 8px; /* Optional: adds rounded corners */
 }
 
 /* Responsive adjustments for smaller screens */
