@@ -22,16 +22,20 @@
   </header>
 
   <section id="home" class="section home-section">
-    <img src="https://via.placeholder.com/1200x500?text=Care+Public+School+Campus" alt="School Image" class="hero-image" />
-    <div class="overlay">
+    <h1>Welcome to Care Public School</h1>
+      <p><b>Empowering young minds from LKG to 10th Grade with quality English-medium education</p>
+    <img src="img\school.jpg" alt="School Image" class="hero-image" />
+    <!-- <div class="overlay">
       <h1>Welcome to Care Public School</h1>
       <p>Empowering young minds from LKG to 10th Grade with quality English-medium education</p>
-    </div>
+    </div> -->
   </section>
 
   <section id="about" class="section">
     <h2>About Us</h2>
     <p>Care Public School, located in Narasaraopet, Palnadu District, Andhra Pradesh, is an English-medium institution offering classes from LKG to 10th grade. We believe in providing a balanced education focused on academics, character, and creativity.</p>
+    <p>We also provide hostel services for students who require accommodation, ensuring a safe and conducive living environment that complements their academic journey.</p>
+    <p>At Care Public School, we go beyond teaching curriculum subjects. We are committed to instilling discipline and motivation in our students, empowering them to grow personally and serve their communities. Our holistic approach prepares students to achieve their academic goals while developing the adaptability needed to thrive in dynamic situations and evolving generations.</p>
   </section>
 
   <section id="academics" class="section">
@@ -41,16 +45,66 @@
 
   <section id="events" class="section">
     <h2>Events</h2>
-    <p>Our school celebrates various cultural, academic, and sports events throughout the year — from Annual Day and Independence Day to Science Fairs and Art Competitions. Stay tuned for updates!</p>
-  </section>
+    <div class="events-content">
+      <p>Our school celebrates various cultural, academic, and sports events throughout the year — from Annual Day and Independence Day to Science Fairs and Art Competitions. Stay tuned for updates!</p>
+      
+      <div class="events-highlights">
+        <h3>Our Event Highlights</h3>
+        <div class="event-categories">
+          <div class="event-category">
+            <h4>National & Cultural Events</h4>
+            <ul>
+              <li>Independence Day Celebrations</li>
+              <li>Republic Day Parade</li>
+              <li>Gandhi Jayanti Observance</li>
+              <li>Cultural Festivals</li>
+            </ul>
+          </div>
+          <div class="event-category">
+            <h4>Academic & Special Days</h4>
+            <ul>
+              <li>Teachers' Day Celebrations</li>
+              <li>Children's Day Activities</li>
+              <li>Science & Math Exhibitions</li>
+              <li>Reading Week</li>
+            </ul>
+          </div>
+          <div class="event-category">
+            <h4>Sports & Competitions</h4>
+            <ul>
+              <li>Annual Sports Day</li>
+              <li>Inter-house Competitions</li>
+              <li>Art & Craft Exhibitions</li>
+              <li>Music & Dance Performances</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="values-education">
+        <h3>Values Through Events</h3>
+        <p>At Care Public School, we believe in holistic education. Through our events, we teach students to respect and understand:</p>
+        <ul>
+          <li>The sacrifices of our freedom fighters during Independence Day celebrations</li>
+          <li>The importance of education and teachers on Teachers' Day</li>
+          <li>Scientific temper and innovation through Science Fairs</li>
+          <li>Cultural heritage during traditional festivals</li>
+          <li>Sportsmanship and teamwork during Sports Day</li>
+        </ul>
+      </div>
+      
+      <!-- <div class="gallery-link">
+        <p><strong>See our Gallery for event photos and highlights!</strong></p>
+        <a href="#gallery" class="cta-button">View Event Gallery</a>
+      </div>
+    </div>
+  </section> -->
+
 
   <section id="gallery" class="section gallery-section">
     <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="https://via.placeholder.com/300x200?text=School+Event" alt="Event 1" />
-      <img src="https://via.placeholder.com/300x200?text=Students+Activity" alt="Event 2" />
-      <img src="https://via.placeholder.com/300x200?text=Classroom" alt="Event 3" />
-      <img src="https://via.placeholder.com/300x200?text=Annual+Day" alt="Event 4" />
+    <div id="gallery-container" class="gallery">
+        <!-- Images will be dynamically inserted here by JavaScript -->
     </div>
   </section>
 
@@ -65,16 +119,29 @@
     <p><strong>Phone:</strong> +91 9441883503<br>
       <strong>Email:</strong> nrtcarepublicschool@gmail.com
     </p>
-    <div class="map-container">
-      <iframe
-        src="https://www.waze.com/live-map/directions/care-public-school-narasaraopet?to=place.w.52428962.524551767.1688062"
-        width="100%" height="300" style="border:0;" loading="lazy">
-      </iframe>
-    </div>
+    <br>
+    <div class="col-xs-12 col-md-7" style="padding:0;">
+                    <iframe
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        loading="lazy"
+                        allowfullscreen
+                        src="https://www.google.com/maps?q=16.23246390958666,80.04141655148764&hl=en&z=15&output=embed">
+                    </iframe>
+                </div>
   </section>
 
   <footer>
-    <p>© 2025 Care Public School, Narasaraopet. All Rights Reserved.</p>
+    <button onclick="topFunction()" id="backToTop" title="Go to top"><p>© 2025 Care Public School, Narasaraopet. All Rights Reserved.</p></button>
   </footer>
+  <script src="script.js"></script>
+  <script>
+        new WOW().init();
+        
+        function topFunction() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }   
+    </script>
 </body>
 </html>
